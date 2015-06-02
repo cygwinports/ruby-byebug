@@ -1,0 +1,16 @@
+inherit rubygem
+
+NAME="ruby-byebug"
+VERSION=4.0.5
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby debugger"
+DESCRIPTION="Byebug is a Ruby 2 debugger. It's implemented using the Ruby 2
+TracePoint C API for execution control and the Debug Inspector C API for call
+stack navigation. The core component provides support that front-ends can build
+on. It provides breakpoint handling and bindings for stack frames among other
+things and it comes with an easy to use command line interface."
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_byebug_CONTENTS="usr/bin/byebug ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_byebug_doc_CONTENTS="${RUBYGEM_DOCDIR#/}"
