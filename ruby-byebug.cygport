@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-byebug"
-VERSION=10.0.2
+VERSION=11.0.1
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby debugger"
